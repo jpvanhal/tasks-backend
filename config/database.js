@@ -1,16 +1,16 @@
 export default {
   development: {
-    driver: 'sqlite3',
-    database: 'backend_dev'
+    driver: 'pg',
+    database: 'tasks_dev'
   },
 
   test: {
-    driver: 'sqlite3',
-    database: 'backend_test'
+    driver: 'pg',
+    database: 'tasks_test'
   },
 
   production: {
-    driver: 'sqlite3',
-    database: 'backend_prod'
+    driver: 'pg',
+    database: 'tasks_prod'
   }
 };

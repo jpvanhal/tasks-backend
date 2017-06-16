@@ -13,7 +13,8 @@
     "babel-preset-lux": "2.0.2",
     "faker": "^4.1.0",
     "knex": "0.12.6",
-    "lux-framework": "1.2.0"
+    "lux-framework": "1.2.0",
+    "pg": "^6.2.4"
   },
   "engines": {
     "node": ">= 6.0"
