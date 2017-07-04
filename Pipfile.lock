@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8b19049f533c4b6a9488f79e3cb9935f72a278e3a2879a09dccb60112caa771f"
+            "sha256": "614cbec928834afae3cd6c7aa936a879b817a64bab21d1f2d3d24f99538405e8"
         },
         "requires": {},
         "sources": [
@@ -26,6 +26,15 @@
         },
         "flask-sqlalchemy": {
             "version": "==2.2"
+        },
+        "gevent": {
+            "version": "==1.2.2"
+        },
+        "greenlet": {
+            "version": "==0.4.12"
+        },
+        "gunicorn": {
+            "version": "==19.7.1"
         },
         "itsdangerous": {
             "version": "==0.24"
