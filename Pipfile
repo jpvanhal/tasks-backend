@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+flake8-isort = "*"
+pytest = "*"
+
+[packages]
+sqlalchemy = "*"
+alembic = "*"
+psycopg2 = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+flask-rest-jsonapi = "*"
