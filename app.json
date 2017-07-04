@@ -1,0 +1,13 @@
+{
+  "environments": {
+    "test": {
+      "addons": [
+        "heroku-postgresql"
+      ],
+      "scripts": {
+        "test-setup": "pipenv install --dev",
+        "test": "pytest --flake8 --tap-stream"
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "13425b29a89c4d6c3e6d653b4132165d084a5c237849b5128efa7a663a151d15"
+            "sha256": "8b19049f533c4b6a9488f79e3cb9935f72a278e3a2879a09dccb60112caa771f"
         },
         "requires": {},
         "sources": [
@@ -92,8 +92,17 @@
         "pytest": {
             "version": "==3.1.2"
         },
+        "pytest-flake8": {
+            "version": "==0.8.1"
+        },
+        "pytest-tap": {
+            "version": "==2.0"
+        },
         "setuptools": {
             "version": "==36.0.1"
+        },
+        "tap.py": {
+            "version": "==2.1"
         },
         "testfixtures": {
             "version": "==5.1.1"
