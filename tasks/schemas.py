@@ -3,10 +3,6 @@ from marshmallow_jsonapi import fields
 from marshmallow_jsonapi.flask import Schema
 
 
-def dasherize(text):
-    return text.replace('_', '-')
-
-
 class TaskSchema(Schema):
     id = fields.UUID()
     title = fields.Str(required=True, validate=validate.Length(min=1))
@@ -15,7 +11,6 @@ class TaskSchema(Schema):
 
     class Meta:
         type_ = 'tasks'
-        inflect = dasherize
         strict = True
         self_view = 'task_detail'
         self_view_kwargs = {'id': '<id>'}
