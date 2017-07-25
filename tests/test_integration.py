@@ -89,7 +89,7 @@ def test_get_task(client, tasks):
             'attributes': {
                 'title': 'Plan trip to Lisbon',
                 'is_completed': False,
-                'created_at': '2017-05-13T20:18:00+00:00',
+                'created_at': '2017-05-13T20:18:00.000000Z',
             },
             'links': {
                 'self': '/tasks/6616a883-4ae1-408e-8eee-59699236191e',
@@ -120,7 +120,7 @@ def test_create_task(client):
                 'attributes': {
                     'title': 'Implement the backend',
                     'is_completed': False,
-                    'created_at': '2017-01-01T00:00:00+00:00',
+                    'created_at': '2017-01-01T00:00:00.000000Z',
                 },
             },
         })
@@ -128,7 +128,7 @@ def test_create_task(client):
     assert response.status_code == 201
     assert response.json['data']['id'] == '2aa998e7-259d-4214-a97a-ef664c5ba8d4'
     assert response.json['data']['attributes']['title'] == 'Implement the backend'
-    assert not response.json['data']['attributes']['created_at'].startswith('2017-01-01')
+    assert response.json['data']['attributes']['created_at'] == '2017-01-01T00:00:00.000000Z'
 
 
 @pytest.mark.parametrize('data', [
