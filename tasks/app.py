@@ -7,6 +7,9 @@ from flask_rest_jsonapi import Api
 def create_app(**config):
     app = Flask(__name__)
 
+    from . import cli
+    app.cli.add_command(cli.tasks)
+
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://localhost/tasks_dev'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config.update(config)

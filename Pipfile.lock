@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "614cbec928834afae3cd6c7aa936a879b817a64bab21d1f2d3d24f99538405e8"
+            "sha256": "7104eb19f04b0fa19bc191cc251c050fc4510cf87a8d69849dbe84ea991bc559"
         },
         "requires": {},
         "sources": [
@@ -13,10 +13,19 @@
     },
     "default": {
         "alembic": {
-            "version": "==0.9.2"
+            "version": "==0.9.5"
         },
         "click": {
             "version": "==6.7"
+        },
+        "dnspython": {
+            "version": "==1.15.0"
+        },
+        "email-validator": {
+            "version": "==1.0.2"
+        },
+        "faker": {
+            "version": "==0.8.3"
         },
         "flask": {
             "version": "==0.12.2"
@@ -36,6 +45,9 @@
         "gunicorn": {
             "version": "==19.7.1"
         },
+        "idna": {
+            "version": "==2.6"
+        },
         "itsdangerous": {
             "version": "==0.24"
         },
@@ -43,7 +55,7 @@
             "version": "==2.9.6"
         },
         "mako": {
-            "version": "==1.0.6"
+            "version": "==1.0.7"
         },
         "markupsafe": {
             "version": "==1.0"
@@ -52,13 +64,13 @@
             "version": "==2.13.1"
         },
         "marshmallow-jsonapi": {
-            "version": "==0.15.0"
+            "version": "==0.15.1"
         },
         "psycopg2": {
-            "version": "==2.7.1"
+            "version": "==2.7.3.1"
         },
         "python-dateutil": {
-            "version": "==2.6.0"
+            "version": "==2.6.1"
         },
         "python-editor": {
             "version": "==1.0.3"
@@ -67,7 +79,7 @@
             "version": "==1.10.0"
         },
         "sqlalchemy": {
-            "version": "==1.1.11"
+            "version": "==1.1.14"
         },
         "werkzeug": {
             "version": "==0.12.2"
@@ -75,10 +87,10 @@
     },
     "develop": {
         "flake8": {
-            "version": "==3.3.0"
+            "version": "==3.4.1"
         },
         "flake8-isort": {
-            "version": "==2.2.1"
+            "version": "==2.2.2"
         },
         "flake8-polyfill": {
             "version": "==1.0.1"
@@ -99,22 +111,22 @@
             "version": "==1.5.0"
         },
         "pytest": {
-            "version": "==3.1.2"
+            "version": "==3.2.2"
         },
         "pytest-flake8": {
             "version": "==0.8.1"
         },
         "pytest-tap": {
-            "version": "==2.0"
+            "version": "==2.1"
         },
         "setuptools": {
-            "version": "==36.0.1"
+            "version": "==36.4.0"
         },
         "tap.py": {
             "version": "==2.1"
         },
         "testfixtures": {
-            "version": "==5.1.1"
+            "version": "==5.2.0"
         }
     }
 }
