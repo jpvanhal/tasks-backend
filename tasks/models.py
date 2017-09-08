@@ -23,3 +23,9 @@ class Task(db.Model):
         nullable=False,
         server_default=db.func.now()
     )
+
+    def __str__(self):
+        return '- [{check}] {title}'.format(
+            check='X' if self.is_completed else ' ',
+            title=self.title,
+        )
